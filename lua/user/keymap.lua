@@ -34,3 +34,6 @@ vim.keymap.set('t', '<C-k>', '<C-\\><C-n>:FloatermNext<cr>', {desc = 'Next termi
 vim.keymap.set('t', '<C-j>', '<C-\\><C-n>:FloatermPrev<cr>', {desc = 'Previous terminal'})
 vim.keymap.set('t', '<C-h>', '<C-\\><C-n>:FloatermKill<cr>:FloatermToggle<cr>', {desc = 'Kill terminal'})
 vim.keymap.set('t', '<C-l>', '<C-\\><C-n>:FloatermNew<cr>', {desc = 'New terminal'})
+
+-- LazyGit
+vim.keymap.set('n', '<leader>g', ':LazyGit<cr>', {desc = 'Open LazyGit'})

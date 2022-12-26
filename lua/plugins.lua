@@ -32,6 +32,9 @@ return require('packer').startup(function(use)
   -- Terminal
   use 'voldikss/vim-floaterm'
 
+  -- LazyGit
+  use 'kdheepak/lazygit.nvim'
+
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
