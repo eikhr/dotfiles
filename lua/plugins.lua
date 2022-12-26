@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
     config = [[require('config.neotree')]],
   }
 
-  -- Language parsing
+  -- Highlight, edit, and navigate
   use {
     'nvim-treesitter/nvim-treesitter',
     event = "BufEnter",
@@ -63,6 +63,10 @@ return require('packer').startup(function(use)
       ts_update()
     end,
     config = [[require('config.treesitter')]],
+  }
+  use {
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    after = 'nvim-treesitter',
   }
   
   -- Formatting
