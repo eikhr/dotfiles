@@ -26,3 +26,11 @@ vim.keymap.set('v', '<C-l>', ':MoveHBlock(1)<CR>', { silent = true })
 
 -- Open sidebar
 vim.keymap.set('n', '<leader>o', ':Neotree<cr>', {desc = 'Open sidebar'})
+
+-- Terminal
+vim.keymap.set('n', '<leader>t', ':FloatermToggle<cr>', {desc = 'Open terminal'})
+vim.keymap.set('t', '<C-ø>', '<C-\\><C-n>:FloatermToggle<cr>', {desc = 'Close terminal'})
+vim.keymap.set('t', '<C-k>', '<C-\\><C-n>:FloatermNext<cr>', {desc = 'Next terminal'})
+vim.keymap.set('t', '<C-j>', '<C-\\><C-n>:FloatermPrev<cr>', {desc = 'Previous terminal'})
+vim.keymap.set('t', '<C-h>', '<C-\\><C-n>:FloatermKill<cr>:FloatermToggle<cr>', {desc = 'Kill terminal'})
+vim.keymap.set('t', '<C-l>', '<C-\\><C-n>:FloatermNew<cr>', {desc = 'New terminal'})

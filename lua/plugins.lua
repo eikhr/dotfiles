@@ -29,6 +29,9 @@ return require('packer').startup(function(use)
   -- Navigate within file
   use 'ggandor/lightspeed.nvim'
 
+  -- Terminal
+  use 'voldikss/vim-floaterm'
+
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
