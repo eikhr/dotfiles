@@ -68,6 +68,10 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',
   }
+  use {
+    'windwp/nvim-ts-autotag',
+    after = 'nvim-treesitter',
+  }
   
   -- Formatting
   use { 'sbdchd/neoformat', cmd = 'Neoformat' }
