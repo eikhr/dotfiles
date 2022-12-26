@@ -72,6 +72,12 @@ return require('packer').startup(function(use)
     'windwp/nvim-ts-autotag',
     after = 'nvim-treesitter',
   }
+
+  -- Comment
+  use {
+    'numToStr/Comment.nvim',
+    config = [[require('config.comment')]],
+  }
   
   -- Formatting
   use { 'sbdchd/neoformat', cmd = 'Neoformat' }
