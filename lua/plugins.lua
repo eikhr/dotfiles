@@ -44,6 +44,12 @@ return require('packer').startup(function(use)
   -- LazyGit
   use 'kdheepak/lazygit.nvim'
 
+  -- Git blame
+  use {
+    'f-person/git-blame.nvim',
+    config = [[require('config.git-blame')]],
+  }
+
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
