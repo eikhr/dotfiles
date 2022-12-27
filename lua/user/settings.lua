@@ -10,10 +10,6 @@ vim.opt.hlsearch = false
 -- Line wrap
 vim.opt.wrap = true
 vim.opt.breakindent = true
--- Tab size
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
 -- Better colors
 vim.opt.termguicolors = true
 -- Autosave

@@ -23,6 +23,9 @@ return require('packer').startup(function(use)
   -- Theme
   use 'marko-cerovac/material.nvim'
 
+  -- Detect tabstop and shiftwidth
+  use 'tpope/vim-sleuth'
+  
   -- Move lines
   use 'fedepujol/move.nvim' 
 
