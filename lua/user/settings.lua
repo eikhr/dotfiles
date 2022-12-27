@@ -12,6 +12,8 @@ vim.opt.wrap = true
 vim.opt.breakindent = true
 -- Better colors
 vim.opt.termguicolors = true
+-- Update interval
+vim.opt.updatetime = 100
 -- Autosave
 vim.opt.autowrite = true
 vim.opt.autowriteall = true
