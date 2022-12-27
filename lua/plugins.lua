@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    requires = { 'kyazdani42/nvim-web-devicons' },
     config = [[require('config.lualine')]],
   }
 
@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
     branch = "v2.x",
     requires = { 
       "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
     config = [[require('config.neotree')]],
