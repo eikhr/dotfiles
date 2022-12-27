@@ -53,6 +53,12 @@ return require('packer').startup(function(use)
   -- Git changes shown in buffers
   use 'airblade/vim-gitgutter'
 
+  -- Undo tree
+  use {
+    'mbbill/undotree',
+    setup = [[require('config.undotree')]],
+  }
+
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
