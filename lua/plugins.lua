@@ -25,6 +25,12 @@ return require('packer').startup(function(use)
 
   -- Detect tabstop and shiftwidth
   use 'tpope/vim-sleuth'
+
+  -- Indentation guides
+  use {
+    'lukas-reineke/indent-blankline.nvim',
+    config = [[require('config.indent-blankline')]],
+  }
   
   -- Move lines
   use 'fedepujol/move.nvim' 

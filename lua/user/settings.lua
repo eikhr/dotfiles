@@ -15,3 +15,8 @@ vim.opt.termguicolors = true
 -- Autosave
 vim.opt.autowrite = true
 vim.opt.autowriteall = true
+
+-- Show white space
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
