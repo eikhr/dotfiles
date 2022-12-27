@@ -54,6 +54,14 @@ return require('packer').startup(function(use)
     config = [[require('config.neotree')]],
   }
 
+  -- Telescope fuzzy finder
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = [[require('config.telescope')]],
+  }
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
   -- Highlight, edit, and navigate
   use {
     'nvim-treesitter/nvim-treesitter',
