@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
     config = [[require('config.git-blame')]],
   }
 
+  -- Git changes shown in buffers
+  use 'airblade/vim-gitgutter'
+
   -- Status bar line
   use {
     'nvim-lualine/lualine.nvim',
