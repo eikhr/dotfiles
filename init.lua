@@ -1,14 +1,8 @@
--- Install plugins
-require('plugins')
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
--- Preferences
-require('user.settings')
+require('config.lazy')
 
--- Keybindings
-require('user.keymap')
-
--- Autocommands
-require('user.autocommands')
-
--- Theme
-require('user.theme')
+require('config.options')
+require('config.keymap')
+require('config.commands')

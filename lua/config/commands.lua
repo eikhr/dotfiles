@@ -18,8 +18,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Format on save
-vim.api.nvim_create_autocmd('BufWritePre', {
-  group = augroup,
-  desc = 'Format on save',
-  command = 'silent! undojoin | Neoformat'
-})
+-- vim.api.nvim_create_autocmd('BufWritePre', {
+--   group = augroup,
+--   desc = 'Format on save',
+--   command = 'silent! undojoin | Neoformat'
+-- })
