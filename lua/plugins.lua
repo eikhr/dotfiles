@@ -23,6 +23,12 @@ return require('packer').startup(function(use)
   -- Theme
   use 'marko-cerovac/material.nvim'
 
+  -- Color colors
+  use {
+    'norcalli/nvim-colorizer.lua',
+    config = [[require('config.colorizer')]],
+  }
+
   -- Detect tabstop and shiftwidth
   use 'tpope/vim-sleuth'
 
