@@ -10,7 +10,7 @@ return {
     { "<leader>bdh", ":BufferLineCloseLeft<cr>", desc = "Close Buffers to the Left" },
   },
   config = function()
-    local signs = require("config.plugins.lsp.diagnostics").signs
+    local signs = require("plugins.lsp.diagnostics").signs
 
     signs = {
       error = signs.Error,

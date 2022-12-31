@@ -42,4 +42,4 @@ vim.keymap.set("x", "N", "'nN'[v:searchforward]", { expr = true })
 vim.keymap.set("o", "N", "'nN'[v:searchforward]", { expr = true })
 
 -- Toggle Format on Save
-vim.keymap.set("n", "<leader>tf", require("config.plugins.lsp.formatting").toggle, { desc = "Toggle Format on Save" })
+vim.keymap.set("n", "<leader>tf", require("plugins.lsp.formatting").toggle, { desc = "Toggle Format on Save" })

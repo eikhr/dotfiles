@@ -66,14 +66,14 @@ M.language_servers = {
 
 function M.config()
   require("mason")
-  require("config.plugins.lsp.diagnostics").setup()
+  require("plugins.lsp.diagnostics").setup()
 
   local function on_attach(client, bufnr)
     if not (client.name == "null-ls") then
       require("nvim-navic").attach(client, bufnr)
     end
-    require("config.plugins.lsp.formatting").setup(client, bufnr)
-    require("config.plugins.lsp.keys").setup(client, bufnr)
+    require("plugins.lsp.formatting").setup(client, bufnr)
+    require("plugins.lsp.keys").setup(client, bufnr)
   end
 
   local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -100,7 +100,7 @@ function M.config()
     end
   end
 
-  require("config.plugins.null-ls").setup(options)
+  require("plugins.null-ls").setup(options)
 end
 
 return M

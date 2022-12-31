@@ -23,7 +23,7 @@ local tools = {
   "flake8",
 }
 
-local language_servers = utils.get_keys(require("config.plugins.lsp").language_servers)
+local language_servers = utils.get_keys(require("plugins.lsp").language_servers)
 
 local function ensure_installed()
   local registry = require("mason-registry")
