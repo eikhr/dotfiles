@@ -12,14 +12,7 @@ vim.api.nvim_create_autocmd('FileType', {
 vim.api.nvim_create_autocmd('TextYankPost', {
   group = augroup,
   desc = 'Highlight on yank',
-  callback = function(event)
+  callback = function()
     vim.highlight.on_yank({higroup = 'Visual', timeout = 200})
   end
 })
-
--- Format on save
--- vim.api.nvim_create_autocmd('BufWritePre', {
---   group = augroup,
---   desc = 'Format on save',
---   command = 'silent! undojoin | Neoformat'
--- })

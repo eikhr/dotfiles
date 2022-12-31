@@ -10,3 +10,6 @@ vim.keymap.set({'n', 'x'}, 'x', '"_x', {desc = 'Delete'})
 
 -- Select all
 vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>', {desc = 'Select all'})
+
+-- Toggle Format on Save
+vim.keymap.set("n", "<leader>tf", require("config.plugins.lsp.formatting").toggle, { desc = "Toggle Format on Save" })
