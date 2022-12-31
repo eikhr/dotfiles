@@ -2,7 +2,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 -- Allow mouse
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 -- Search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -20,5 +20,5 @@ vim.opt.autowriteall = true
 
 -- Show white space
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
-vim.opt.listchars:append "eol:↴"
+vim.opt.listchars:append("space:⋅")
+vim.opt.listchars:append("eol:↴")

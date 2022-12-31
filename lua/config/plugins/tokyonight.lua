@@ -5,6 +5,6 @@ return {
     style = "night",
   },
   init = function()
-    vim.cmd [[colorscheme tokyonight]]
+    vim.cmd([[colorscheme tokyonight]])
   end,
 }

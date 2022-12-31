@@ -1,9 +1,11 @@
 return {
   "lewis6991/gitsigns.nvim",
   event = "BufReadPre",
+
   cond = function()
     return vim.loop.fs_stat(".git")
   end,
+
   config = {
     current_line_blame = true,
     current_line_blame_opts = {

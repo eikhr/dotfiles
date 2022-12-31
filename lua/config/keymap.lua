@@ -1,5 +1,5 @@
 -- Save
-vim.keymap.set('n', '<leader>w', '<cmd>write<cr>', {desc = 'Save'})
+vim.keymap.set("n", "<leader>w", "<cmd>write<cr>", { desc = "Save" })
 
 -- Move to window
 vim.keymap.set("n", "<leader>mh", "<C-w>h")
@@ -20,14 +20,14 @@ vim.keymap.set("n", "<S-Left>", "<cmd>vertical resize -2<CR>")
 vim.keymap.set("n", "<S-Right>", "<cmd>vertical resize +2<CR>")
 
 -- Copy/paste from system clipboard
-vim.keymap.set({'n', 'x'}, 'cp', '"+y', {desc = 'Copy'})
-vim.keymap.set({'n', 'x'}, 'cv', '"+p', {desc = 'Paste'})
+vim.keymap.set({ "n", "x" }, "cp", '"+y', { desc = "Copy" })
+vim.keymap.set({ "n", "x" }, "cv", '"+p', { desc = "Paste" })
 
 -- Delete without yanking
-vim.keymap.set({'n', 'x'}, 'x', '"_x', {desc = 'Delete'})
+vim.keymap.set({ "n", "x" }, "x", '"_x', { desc = "Delete" })
 
 -- Select all
-vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>', {desc = 'Select all'})
+vim.keymap.set("n", "<leader>a", ":keepjumps normal! ggVG<cr>", { desc = "Select all" })
 
 -- Better indenting
 vim.keymap.set("v", "<", "<gv")
