@@ -1,6 +1,6 @@
 return {
   "famiu/bufdelete.nvim",
-  event = "VeryLazy",
+  cmd = "Bdelete",
   keys = {
     { "<leader>bdd", ":Bdelete<cr>", desc = "Delete Current Buffer" },
   },
