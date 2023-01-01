@@ -4,7 +4,7 @@
 links: | nvim kitty
 
 nvim:
-	ln -v -F -s ~/dotfiles/nvim/ ~/.config/nvim
+	ln -s -F -h -v ~/dotfiles/nvim/ ~/.config/nvim
 
 kitty:
-	ln -v -F -s ~/dotfiles/kitty/ ~/.config/kitty
+	ln -s -F -h -v ~/dotfiles/kitty/ ~/.config/kitty
