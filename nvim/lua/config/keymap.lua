@@ -33,6 +33,9 @@ vim.keymap.set("n", "<leader>a", ":keepjumps normal! ggVG<cr>", { desc = "Select
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
+-- Clear search with <esc>
+vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>")
+
 -- https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n
 vim.keymap.set("n", "n", "'Nn'[v:searchforward]", { expr = true })
 vim.keymap.set("x", "n", "'Nn'[v:searchforward]", { expr = true })

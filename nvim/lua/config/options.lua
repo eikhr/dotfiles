@@ -6,7 +6,6 @@ vim.opt.mouse = "a"
 -- Search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.hlsearch = false
 -- Line wrap
 vim.opt.wrap = true
 vim.opt.breakindent = true
