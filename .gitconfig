@@ -1,0 +1,22 @@
+[user]
+	name = Eik Hvattum Røgeberg
+	email = eik.rogeberg@gmail.com
+	signingkey = 7021F8AB9E015E34
+
+[credential]
+	helper = osxkeychain
+
+[commit]
+	gpgsign = true
+
+[init]
+	defaultBranch = master
+
+[diff "ansible-vault"]
+	textconv = ansible-vault view
+
+[pull]
+	ff = only
+
+[rebase]
+	updateRefs = true
