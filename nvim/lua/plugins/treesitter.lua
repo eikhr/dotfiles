@@ -49,7 +49,7 @@ local ensure_installed = {
   "yaml",
 }
 
-function M.setup()
+function M.config()
   require("nvim-treesitter.configs").setup({
     ensure_installed = ensure_installed,
     sync_install = false,
