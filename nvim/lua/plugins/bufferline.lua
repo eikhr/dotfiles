@@ -1,14 +1,6 @@
 return {
   "akinsho/bufferline.nvim",
   lazy = false,
-  keys = {
-    { "<leader>bk", ":BufferLineCycleNext<cr>", desc = "Next Buffer" },
-    { "<leader>bl", ":BufferLineCycleNext<cr>", desc = "Next Buffer" },
-    { "<leader>bj", ":BufferLineCyclePrev<cr>", desc = "Previous Buffer" },
-    { "<leader>bh", ":BufferLineCyclePrev<cr>", desc = "Previous Buffer" },
-    { "<leader>bdl", ":BufferLineCloseRight<cr>", desc = "Close Buffers to the Right" },
-    { "<leader>bdh", ":BufferLineCloseLeft<cr>", desc = "Close Buffers to the Left" },
-  },
   config = function()
     local signs = require("plugins.lsp.diagnostics").signs
 

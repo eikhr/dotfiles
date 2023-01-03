@@ -9,10 +9,6 @@ local M = {
     "MunifTanjim/nui.nvim",
   },
 
-  keys = {
-    { "<leader>s", "<cmd>Neotree<cr>", desc = "NeoTree" },
-  },
-
   config = {
     close_if_last_window = true,
     enable_git_status = true,

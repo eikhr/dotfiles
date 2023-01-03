@@ -1,13 +1,5 @@
 return {
   "danymat/neogen",
-  keys = {
-    {
-      "<leader>cc",
-      function()
-        require("neogen").generate({})
-      end,
-      desc = "Neogen Comment",
-    },
-  },
+  cmd = "Neogen",
   config = { snippet_engine = "luasnip" },
 }

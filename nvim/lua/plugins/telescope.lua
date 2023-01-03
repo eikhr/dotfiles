@@ -12,12 +12,6 @@ local function project_files()
   end
 end
 
-local function builtin(name)
-  return function(...)
-    require("telescope.builtin")[name](...)
-  end
-end
-
 local M = {
   "nvim-telescope/telescope.nvim",
   cmd = "Telescope",
@@ -26,10 +20,6 @@ local M = {
   },
   keys = {
     { "<leader><space>", project_files, desc = "Find File" },
-    { "<leader>fg", builtin("live_grep"), desc = "Find in File" },
-    { "<leader>fb", builtin("buffers"), desc = "Find Buffer" },
-    { "<leader>fh", builtin("help_tags"), desc = "Find Help" },
-    { "<leader>fi", builtin("highlights"), desc = "Find Highlight" },
   },
 }
 

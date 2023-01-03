@@ -3,6 +3,8 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 -- Allow mouse
 vim.opt.mouse = "a"
+-- Shorter keycombo timeout
+vim.opt.timeoutlen = 300
 -- Search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
