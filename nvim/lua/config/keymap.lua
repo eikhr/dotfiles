@@ -99,6 +99,11 @@ local leader = {
     h = { ":Noice history<cr>", "History" },
     f = { ":NoiceTelescope<cr>", "Find Message" },
   },
+  m = {
+    name = "+mind",
+    m = { ":MindOpenMain<cr>", "Open Main Project" },
+    p = { ":MindOpenSmartProject<cr>", "Open Project (smart)" },
+  },
   t = {
     name = "+toggle",
     f = { require("plugins.lsp.formatting").toggle, "Toggle Format on Save" },
