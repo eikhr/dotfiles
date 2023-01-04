@@ -18,7 +18,7 @@ M.language_servers = {
   cssls = {},
   cssmodules_ls = {},
   clojure_lsp = {},
-  denols = {},
+  -- denols = {},
   dockerls = {},
   elmls = {},
   gopls = {},
@@ -72,7 +72,7 @@ M.language_servers = {
   marksman = {},
   rust_analyzer = {},
   svelte = {},
-  tailwindcss = {},
+  -- tailwindcss = {},
   vimls = {},
   yamlls = {},
 }
