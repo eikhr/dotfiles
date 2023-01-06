@@ -21,6 +21,7 @@ M.language_servers = {
   -- denols = {},
   dockerls = {},
   elmls = {},
+  eslint = {},
   gopls = {},
   graphql = {},
   html = {},
@@ -77,12 +78,18 @@ M.language_servers = {
   yamlls = {},
 }
 
+local nvim_navic_exclude = {
+  ["null-ls"] = true,
+  ["eslint"] = true,
+  ["cssmodules_ls"] = true,
+}
+
 function M.config()
   require("mason")
   require("plugins.lsp.diagnostics").setup()
 
   local function on_attach(client, bufnr)
-    if not (client.name == "null-ls") then
+    if not nvim_navic_exclude[client.name] then
       require("nvim-navic").attach(client, bufnr)
     end
     require("plugins.lsp.formatting").setup(client, bufnr)
