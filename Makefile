@@ -9,7 +9,7 @@ link_nvim:
 link_kitty:
 	ln -s -F -h -v ~/dotfiles/kitty/ ~/.config/kitty
 
-link_zsh:
+link_ssh:
 	ln -s -F -h -v ~/dotfiles/.ssh/config ~/.ssh/config
 
 link_zsh:
