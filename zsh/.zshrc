@@ -38,6 +38,9 @@ export ROOT=$HOME/dotfiles/zsh
 # Export colors
 export TERM=xterm-256color
 
+# Webom password-store
+export PASSWORD_STORE_DIR="/Users/eik/code/webkom/password-store"
+
 # History settings
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
