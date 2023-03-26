@@ -6,6 +6,8 @@ tap 'homebrew/services'
 tap 'homebrew/cask-fonts'
 tap 'oven-sh/bun'
 tap 'riscv/riscv' # For OS course
+tap 'amar1729/formulae' # For browserpass extension
+tap 'sdkman/tap' # sdkman java version manager
 
 # Formulae
 brew 'bash' # Latest Bash version
@@ -30,9 +32,15 @@ brew 'fnm'
 brew 'redis'
 brew 'yarn'
 brew 'bun'
-brew 'riscv-tools' # For OS course
 brew 'qemu' # For OS course
 brew 'gdb'
+brew 'neovim'
+brew 'lazygit'
+brew 'gnupg'
+brew 'browserpass'
+brew 'caddy'
+brew 'ykman'
+brew 'sdkman-cli'
 
 # Casks
 cask 'alfred'
@@ -52,7 +60,20 @@ cask 'netnewswire'
 cask 'tikzit'
 cask 'utm'
 cask 'todoist'
+cask 'intellij-idea'
+cask 'rectangle'
+cask 'cron'
+cask 'alt-tab'
+cask 'gimp'
+cask 'messenger'
+cask 'obs'
+cask 'qlab'
+cask 'autodesk-fusion360'
+cask 'istat-menus'
+cask 'notion'
 
 # Mac App Store
 mas 'Notability', id: 360593530
 mas 'Yubico Authenticator', id: 1497506650
+mas 'Bitwarden', id: 1352778147
+mas 'Time Out - Break Reminders', id: 402592703
