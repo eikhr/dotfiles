@@ -1,7 +1,7 @@
 [user]
 	name = Eik Hvattum Røgeberg
 	email = eik.rogeberg@gmail.com
-	signingkey = 7021F8AB9E015E34
+	signingkey = 59EB7D4EEA0E7E83
 
 [credential]
 	helper = osxkeychain
