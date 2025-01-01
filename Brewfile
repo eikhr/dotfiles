@@ -1,80 +1,243 @@
-# Taps
-tap 'homebrew/cask'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/services'
-tap 'homebrew/cask-fonts'
-tap 'oven-sh/bun'
-tap 'riscv/riscv' # For OS course
-tap 'amar1729/formulae' # For browserpass extension
-tap 'sdkman/tap' # sdkman java version manager
-
-# Formulae
-brew 'bash' # Latest Bash version
-brew 'coreutils' # Those that come with macOS are outdated
-brew 'ffmpeg'
-brew 'gh'
-brew 'git'
-brew 'grep'
-brew 'ripgrep'
-brew 'fzf'
-brew 'exa'
-brew 'ccat'
-brew 'wget'
-brew 'pass'
-brew 'mackup'
-brew 'mas' # Mac App Store manager
-brew 'python@3.8'
-brew 'python@3.9'
-brew 'python@3.10'
-brew 'elm'
-brew 'fnm'
-brew 'redis'
-brew 'yarn'
-brew 'bun'
-brew 'qemu' # For OS course
-brew 'gdb'
-brew 'neovim'
-brew 'lazygit'
-brew 'gnupg'
-brew 'browserpass'
-brew 'caddy'
-brew 'ykman'
-brew 'sdkman-cli'
-brew 'minikube'
-brew 'kubectl'
-
-# Casks
-cask 'alfred'
-cask 'kitty'
-cask 'discord'
-cask 'docker'
-cask 'firefox'
-cask 'google-chrome'
-cask 'insomnia'
-cask 'readdle-spark'
-cask 'slack'
-cask 'visual-studio-code'
-cask 'zoom'
-cask 'vlc'
-cask 'spotify'
-cask 'netnewswire'
-cask 'tikzit'
-cask 'todoist'
-cask 'intellij-idea'
-cask 'rectangle'
-cask 'alt-tab'
-cask 'gimp'
-cask 'messenger'
-cask 'obs'
-cask 'qlab'
-cask 'istat-menus'
-cask 'notion'
-cask 'microsoft-office'
-
-# Mac App Store
-mas 'Notability', id: 360593530
-mas 'Yubico Authenticator', id: 1497506650
-mas 'Bitwarden', id: 1352778147
-mas 'Time Out - Break Reminders', id: 402592703
-mas 'Command X', id: 6448461551
+tap "amar1729/formulae"
+tap "dart-lang/dart"
+tap "dskecse/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "jotta/cli"
+tap "leoafarias/fvm"
+tap "mongodb/brew"
+tap "oven-sh/bun"
+tap "riscv/riscv"
+tap "sdkman/tap"
+brew "act"
+brew "xz"
+brew "little-cms2"
+brew "jpeg-xl"
+brew "aom"
+brew "autoconf"
+brew "automake"
+brew "coreutils"
+brew "libyaml"
+brew "asdf"
+brew "at-spi2-core"
+brew "openssl@1.1"
+brew "python@3.11"
+brew "autojump"
+brew "pycparser"
+brew "cffi"
+brew "cryptography"
+brew "python@3.12"
+brew "awscli"
+brew "bash"
+brew "bat"
+brew "bison"
+brew "boost"
+brew "caddy"
+brew "ccat"
+brew "cmake"
+brew "curl"
+brew "drone-cli"
+brew "elm"
+brew "unbound"
+brew "gnutls"
+brew "openjpeg"
+brew "leptonica"
+brew "libssh"
+brew "tesseract"
+brew "ffmpeg"
+brew "fnm"
+brew "fzf"
+brew "gawk"
+brew "gcc"
+brew "libavif"
+brew "gd"
+brew "gh"
+brew "git"
+brew "git-lfs"
+brew "gsettings-desktop-schemas"
+brew "glib-networking"
+brew "libassuan"
+brew "libgcrypt"
+brew "libksba"
+brew "gnupg"
+brew "qt"
+brew "gnuplot"
+brew "gperftools"
+brew "netpbm"
+brew "gts"
+brew "librsvg"
+brew "graphviz"
+brew "grep"
+brew "gtk+"
+brew "gtk+3"
+brew "gtk-mac-integration"
+brew "icarus-verilog"
+brew "imagemagick"
+brew "jq"
+brew "keyring", link: false
+brew "lazygit", link: false
+brew "libsoup"
+brew "libxml2", link: true
+brew "libxmlsec1"
+brew "libxslt", link: true
+brew "llvm"
+brew "mackup"
+brew "mas"
+brew "openjdk"
+brew "maven"
+brew "minikube"
+brew "node"
+brew "mongosh"
+brew "neovim"
+brew "ninja"
+brew "node@16"
+brew "numpy", link: false
+brew "oath-toolkit"
+brew "open-mpi"
+brew "openconnect"
+brew "pandoc"
+brew "pass"
+brew "pass-otp"
+brew "pinentry-mac"
+brew "poetry"
+brew "postgresql@14"
+brew "protobuf"
+brew "python@3.10"
+brew "tcl-tk"
+brew "python@3.8"
+brew "python@3.9"
+brew "qemu"
+brew "redis"
+brew "ripgrep"
+brew "scc"
+brew "scons"
+brew "source-highlight"
+brew "sysbench"
+brew "terminal-notifier"
+brew "transmission-cli"
+brew "typst"
+brew "vercel-cli", link: false
+brew "virtualenv", link: false
+brew "watch"
+brew "wget"
+brew "yarn"
+brew "ykman"
+brew "yt-dlp"
+brew "zlib"
+brew "amar1729/formulae/browserpass"
+brew "dart-lang/dart/dart"
+brew "jotta/cli/jotta-cli"
+brew "leoafarias/fvm/fvm"
+brew "mongodb/brew/mongodb-database-tools"
+brew "oven-sh/bun/bun"
+brew "sdkman/tap/sdkman-cli"
+cask "alfred"
+cask "alt-tab"
+cask "android-studio"
+cask "audacity"
+cask "balenaetcher"
+cask "basictex"
+cask "caffeine"
+cask "clion"
+cask "discord"
+cask "docker"
+cask "emacs"
+cask "firefox"
+cask "ghostty"
+cask "gimp"
+cask "google-chrome"
+cask "google-cloud-sdk"
+cask "insomnia"
+cask "intellij-idea"
+cask "istat-menus@6"
+cask "kitty"
+cask "messenger"
+cask "microsoft-auto-update"
+cask "microsoft-office"
+cask "minecraft"
+cask "mongodb-compass"
+cask "mozart2"
+cask "netnewswire"
+cask "notion"
+cask "notion-calendar"
+cask "obs"
+cask "obsidian"
+cask "qlab"
+cask "rar"
+cask "readdle-spark"
+cask "rectangle"
+cask "slack"
+cask "spotify"
+cask "steam"
+cask "swiftformat-for-xcode"
+cask "tikzit"
+cask "todoist"
+cask "unity-hub"
+cask "visual-studio-code"
+cask "vlc"
+cask "webstorm"
+cask "wireshark"
+cask "yubico-yubikey-manager"
+cask "zed"
+cask "zoom"
+mas "Command X", id: 6448461551
+mas "Developer", id: 640199958
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "reMarkable", id: 1276493162
+mas "Time Out", id: 402592703
+mas "Xcode", id: 497799835
+mas "Yubico Authenticator", id: 1497506650
+vscode "13xforever.language-x86-64-assembly"
+vscode "asurance.binary-preview"
+vscode "calebfiggers.typst-companion"
+vscode "daohong-emilio.yash"
+vscode "davidanson.vscode-markdownlint"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "jebbs.plantuml"
+vscode "luniclynx.bison"
+vscode "luniclynx.lex"
+vscode "mechatroner.rainbow-csv"
+vscode "mhutchie.git-graph"
+vscode "mozart-oz.vscode-oz"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "mshr-h.veriloghdl"
+vscode "myriad-dreamin.tinymist"
+vscode "openai.openai-chatgpt-adhoc"
+vscode "redhat.java"
+vscode "redhat.vscode-yaml"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "tomoki1207.pdf"
+vscode "twxs.cmake"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "vscjava.vscode-gradle"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"
+vscode "vsls-contrib.codetour"
+vscode "wakatime.vscode-wakatime"
+vscode "yoavbls.pretty-ts-errors"
+vscode "yzhang.markdown-all-in-one"
