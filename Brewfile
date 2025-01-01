@@ -41,6 +41,8 @@ brew 'browserpass'
 brew 'caddy'
 brew 'ykman'
 brew 'sdkman-cli'
+brew 'minikube'
+brew 'kubectl'
 
 # Casks
 cask 'alfred'
@@ -58,22 +60,21 @@ cask 'vlc'
 cask 'spotify'
 cask 'netnewswire'
 cask 'tikzit'
-cask 'utm'
 cask 'todoist'
 cask 'intellij-idea'
 cask 'rectangle'
-cask 'cron'
 cask 'alt-tab'
 cask 'gimp'
 cask 'messenger'
 cask 'obs'
 cask 'qlab'
-cask 'autodesk-fusion360'
 cask 'istat-menus'
 cask 'notion'
+cask 'microsoft-office'
 
 # Mac App Store
 mas 'Notability', id: 360593530
 mas 'Yubico Authenticator', id: 1497506650
 mas 'Bitwarden', id: 1352778147
 mas 'Time Out - Break Reminders', id: 402592703
+mas 'Command X', id: 6448461551
