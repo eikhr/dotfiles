@@ -90,9 +90,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-export DRONE_SERVER=https://ci.webkom.dev
-export DRONE_TOKEN=Fj5TwoWWJOca6QtHlNXUk5DoElGpLViJ
-
 # bun completions
 [ -s "/opt/homebrew/Cellar/bun/0.5.5/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/0.5.5/share/zsh/site-functions/_bun"
 
