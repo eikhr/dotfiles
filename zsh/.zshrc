@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="jovial"
-
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 zstyle ':omz:update' mode auto      # update automatically without asking
@@ -11,17 +9,25 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Uncomment the following line to change how often to auto-update (in days).
 zstyle ':omz:update' frequency 7
 
-# Plugins
-plugins=(
-  zsh-history-enquirer
-  git
-  autojump
-  urltools
-  bgnotify
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  jovial
-)
+# Antigen (oh my zsh plugin manager)
+source /opt/homebrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle autojump
+antigen bundle urltools
+antigen bundle bgnotify
+antigen bundle colored-man-pages
+
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme zthxxx/jovial
+antigen bundle zthxxx/jovial
+antigen bundle zthxxx/zsh-history-enquirer
+
+antigen apply
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,10 +91,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # bun completions
 [ -s "/opt/homebrew/Cellar/bun/0.5.5/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/0.5.5/share/zsh/site-functions/_bun"
@@ -116,7 +126,7 @@ source /Users/eik/code/webkom/dotfiles/.zshrc
 alias webfx='sh "/Users/eik/code/webfx-cli//webfx.sh"'
 
 # Prosjektoppgave setup (gem5, qemu og vSwarm)
-RESOURCES="/Users/eik/code/ntnu/prosjekt/resources"
+RESOURCES="/Users/eik/code/ntnu/resources"
 
 
 newbrew() {
@@ -129,3 +139,4 @@ newbrew() {
     [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.Brewfile" --force
   done
 }
+export PASSWORD_STORE_DIR="/Users/eik/code/webkom/password-store"

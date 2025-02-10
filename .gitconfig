@@ -1,7 +1,7 @@
 [user]
 	name = Eik Hvattum Røgeberg
 	email = eik.rogeberg@gmail.com
-	signingkey = 59EB7D4EEA0E7E83
+	signingkey = 4512E4DC17440BA2
 
 [credential]
 	helper = osxkeychain
@@ -28,3 +28,4 @@
 	required = true
 [core]
 	editor = nano
+	excludesFile = ~/.gitignore
