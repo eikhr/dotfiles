@@ -140,3 +140,12 @@ newbrew() {
   done
 }
 export PASSWORD_STORE_DIR="/Users/eik/code/webkom/password-store"
+
+# Created by `pipx` on 2025-02-19 12:16:22
+export PATH="$PATH:/Users/eik/.local/bin"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/eik/.dart-cli-completion/zsh-config.zsh ]] && . /Users/eik/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
