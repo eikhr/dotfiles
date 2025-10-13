@@ -27,5 +27,5 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	editor = nano
+	editor = vim
 	excludesFile = ~/.gitignore

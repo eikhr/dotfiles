@@ -10,26 +10,29 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 7
 
 # Antigen (oh my zsh plugin manager)
-source /opt/homebrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
-antigen use oh-my-zsh
+# Only load antigen if not already loaded (prevents duplicate loading on source)
+if [[ -z "$ANTIGEN_LOADED" ]]; then
+  export ANTIGEN_LOADED=1
 
-antigen bundle git
-antigen bundle autojump
-antigen bundle urltools
-antigen bundle bgnotify
-antigen bundle colored-man-pages
+  source /opt/homebrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+  antigen use oh-my-zsh
 
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
+  antigen bundle git
+  antigen bundle autojump
+  antigen bundle urltools
+  antigen bundle bgnotify
+  antigen bundle colored-man-pages
 
-antigen theme zthxxx/jovial
-antigen bundle zthxxx/jovial
-antigen bundle zthxxx/zsh-history-enquirer
+  antigen bundle zsh-users/zsh-completions
+  antigen bundle zsh-users/zsh-autosuggestions
+  antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen apply
+  antigen theme zthxxx/jovial
+  antigen bundle zthxxx/jovial
+  antigen bundle zthxxx/zsh-history-enquirer
 
-source $ZSH/oh-my-zsh.sh
+  antigen apply
+fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -149,3 +152,14 @@ export PATH="$PATH:/Users/eik/.local/bin"
 [[ -f /Users/eik/.dart-cli-completion/zsh-config.zsh ]] && . /Users/eik/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+# Fix "python"
+export PATH="$PATH:/opt/homebrew/opt/python@3.13/libexec/bin"
+
+# Atlas CLI
+alias atlas="/Users/eik/code/atlas/gis-dev/atlas-cli/bin/atlas-ts"
+
+# Initialize Zsh completion system
+autoload -Uz compinit && compinit
+
+# Atlas CLI autocomplete
+ATLAS_AC_ZSH_SETUP_PATH=$HOME/Library/Caches/atlas-ts/autocomplete/zsh_setup && test -f $ATLAS_AC_ZSH_SETUP_PATH && source $ATLAS_AC_ZSH_SETUP_PATH
